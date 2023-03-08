@@ -1,0 +1,19 @@
+{
+    "name": "reactmvc/reactmvc",
+    "description": "The PHP framework for backend developers",
+    "type": "framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ReactMVC\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hossein Pira"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
