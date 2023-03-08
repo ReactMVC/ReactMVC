@@ -1,0 +1,11 @@
+# Redirect all to index.php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+
+# Disable directory browsing 
+Options -Indexes
+
+# Errors
+ErrorDocument 403 /views/errors/403.php
