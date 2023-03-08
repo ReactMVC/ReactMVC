@@ -9,9 +9,9 @@ abstract class BaseModel implements CrudInterface{
     protected $pageSize = 10;
     protected $attributes = [];
 
-    protected function __construct(){
+    // protected function __construct(){
 
-    }
+    // }
 
     protected function getAttribute($key){
         if(!$key || !array_key_exists($key, $this->attributes)){
