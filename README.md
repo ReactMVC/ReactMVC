@@ -30,6 +30,12 @@ composer install
 ```
 Be sure to run it on the domain or subdomain or localhost + port.
 
+Run on localhost:
+```
+php -S localhost:8000
+```
+# Routing
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
