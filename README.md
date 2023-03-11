@@ -12,3 +12,4 @@ Download Libraries:
 ```
 composer install
 ```
+Be sure to run it on the domain or subdomain or localhost + port.
