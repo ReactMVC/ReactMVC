@@ -31,5 +31,5 @@ composer install
 Be sure to run it on the domain or subdomain or localhost + port.
 
 # Libraries
-- [PHPDotEnv](https://test "The").
+- [PHPDotEnv](https://github.com/vlucas/phpdotenv "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.").
 
