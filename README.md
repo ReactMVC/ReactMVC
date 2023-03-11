@@ -35,6 +35,32 @@ Run on localhost:
 php -S localhost:8000
 ```
 # Routing
+To define a new route, you need to navigate to the routes directory and open the web.php file with your code editor. Then, we use the Route function to define a new route. ReactMVC has six Route methods which are: get, post, put, patch, options, and delete, used as follows:
+```php
+<?php
+
+Route::get('/', function(){
+    echo "Hello ReactMVC";
+});
+```
+
+To define a template, you need to create it in the views directory such as app.php and then output it like this:
+```php
+<?php
+
+Route::get('/', function(){
+    view('app');
+});
+```
+
+You can also use controllers like this:
+```php
+<?php
+
+Route::get('/', "HomeController@index");
+```
+
+This refers to the HomeController.php file in the App/Controllers directory and reads from its index function.
 
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
