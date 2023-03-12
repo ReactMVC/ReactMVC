@@ -164,6 +164,42 @@ Now, after this step, set up and connect your bot to the webhooks.
 
 For a complete Nano tutorial, be sure to join the Nano Telegram channel at: [Join Now](https://t.me/PHPNano)
 
+<hr>
+
+# Utilities in ReactMVC
+
+In the ReactMVC framework, there is a section called "Utilities" that contains several sub-sections including Client, Server, Url, Asset, and Bot. Each of these sub-sections has its own specific function.
+
+## Client
+
+This section can retrieve useful information such as the user's IP address, host, browser information, and more. For example:
+
+```javascript
+Client::ip();
+```
+
+## Server
+
+This section provides the ability to retrieve server information. For example:
+
+```php
+Server::ip();
+```
+
+## Asset
+
+In this section, you can easily access files used in the ReactMVC project. For example:
+
+```php
+Asset::get('style.css');
+```
+
+## Bot
+
+This section allows you to create your own bot applications using APIs provided by some bot services.
+
+All of these sections are expandable and modifiable, making it easier and faster to develop your website or application.
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
