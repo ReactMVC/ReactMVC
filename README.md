@@ -200,6 +200,50 @@ This section allows you to create your own bot applications using APIs provided 
 
 All of these sections are expandable and modifiable, making it easier and faster to develop your website or application.
 
+<hr>
+
+# Middleware in ReactMVC
+
+Middleware are a layer of code in ReactMVC that sit between requests and responses. This layer allows requests to be modified and their corresponding responses to be monitored as they pass through the server.
+
+## Using Middleware in ReactMVC
+
+To use middleware in ReactMVC, first create the desired middleware file in the App/Middleware directory. Then, in the appropriate Route file, add the desired middleware as a third parameter in the form of an array. For example:
+
+```php
+<?php
+use ReactMVC\App\Middleware\Test;
+
+Route::get('/blog', function(){ 
+    return null;
+}, [Test::class]);
+```
+
+In the above example, Test is being used as middleware. If a user sends a request to the /blog route, the Test code will be executed.
+
+## Structure of Middleware in ReactMVC
+
+The structure of middleware in ReactMVC is in the form of PHP classes. Each middleware must contain a handle() function that includes the necessary code to perform the desired operation. For example:
+
+```php 
+<?php
+namespace ReactMVC\App\Middleware; 
+
+class Test{ 
+
+    public function handle(){ 
+        global $request; 
+        view('blog.app'); 
+    } 
+}
+```
+
+In the above example, the Test class contains a handle() function that sends a desired view for display to the user.
+
+## Conclusion
+
+Middleware in ReactMVC allows users to modify requests and monitor corresponding responses as they pass through the server. This provides users with the ability to design and implement more expandable code for their systems.
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
