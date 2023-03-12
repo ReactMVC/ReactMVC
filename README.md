@@ -145,6 +145,41 @@ Additionally, you can edit the 403 error path by modifying the .htaccess file.
 
 In the Router.php file located in the App/Core/Routing directory, you can also customize the 404 error page path.
 
+## Route Params
+In the MVC architecture that you have a link with the address https://test.com/test-param, "test-param" carries a Route Parameter. The Route Parameter specifies which resource (such as a web page) the user's request is for as part of the URL. Here, "test-param" is the value of the Route Parameter that is passed to the Controller.
+
+Additionally, for the PHP framework named ReactMVC, you can create a series of Route Parameters. To do this, simply add a new parameter as a Route Parameter in the routes/web.php file, for example:
+
+```php
+<?php
+
+Route::get('/post{id}', "PostController@index");
+```
+
+In the above code, the {id} parameter has been added. This parameter is passed to the Controller so that you can use it in other parts of the code.
+
+Furthermore, in your own Controller (in the above example, PostController), you can retrieve the Route parameter using the `get_route_param()` function as follows:
+
+```php
+<?php 
+namespace ReactMVC\App\Controllers; 
+
+class PostController{
+ public static function index(){ 
+    global $request; 
+    $id = $request->get_route_param('id'); 
+    $data = [ 
+        'id' => $id, 
+    ]; 
+    view('blog.post', $data); 
+ }
+}
+```
+
+In the above code, `get_route_param()` is used to get the value of the Route parameter. Then, a `$data` variable is defined containing the parameter information. Here, only a `$id` variable with the value of the Route parameter is defined.
+
+Finally, the `$data` variable is passed to the `view()` function, which is responsible for sending the required data to the template. In this example, `$data` contains the value of `$id`, which you can use in your template.
+
 ## Nano
 Nano is an advanced library for building Telegram bots with the easiest methods, specifically designed for ReactMVC. This library has exceptional speed and security, and supports 98% of Telegram's methods.
 
