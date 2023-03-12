@@ -311,7 +311,9 @@ use ReactMVC\App\Models\User;
 
 $user = new User();
 
-$user->getAll();
+$result = $user->getAll();
+
+var_dump($result);
 ```
 
 ## More DB Library Documentation
