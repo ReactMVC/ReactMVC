@@ -1,5 +1,11 @@
+<div align="center">
+
+<img src="/public/ReactMVC-logo.png" width="200">
+
 # ReactMVC
 The PHP framework for backend developers
+
+</div>
 
 # About ReactMVC
 With the advancement of web technologies and the increasing popularity of the PHP programming language, the use of MVC-based frameworks for developing popular web applications has become widespread. In this context, we will introduce the ReactMVC framework for implementing the MVC architecture using PHP.
