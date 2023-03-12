@@ -132,6 +132,13 @@ Now it's time to introduce the Controller to the Route. Navigate to the web.php 
 Route::get('/', "HomeController@index");
 ```
 
+## Custom 404 and 403 pages
+To customize the 404 or 403 error pages for ordering templates, navigate to the views/errors directory and edit them.
+
+Additionally, you can edit the 403 error path by modifying the .htaccess file.
+
+In the Router.php file located in the App/Core/Routing directory, you can also customize the 404 error page path.
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
