@@ -111,6 +111,20 @@ class HomeController{
     }
 }
 ```
+The data is displayed in the template as follows:
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?= $appName ?></title>
+</head>
+<body>
+	<p><?= $welcome ?></p>
+</body>
+</html>
+```
 
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
