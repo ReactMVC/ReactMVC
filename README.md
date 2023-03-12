@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/public/ReactMVC-logo.png" width="200">
+<img src="/public/ReactMVC.png" width="200">
 
 # ReactMVC
 The PHP framework for backend developers
