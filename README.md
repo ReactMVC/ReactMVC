@@ -248,7 +248,7 @@ Middleware in ReactMVC allows users to modify requests and monitor corresponding
 
 # MysqlBaseModel in ReactMVC
 
-In the ReactMVC framework, you can use the MysqlBaseModel class to communicate with a MySQL database using PHP. This class creates a common base for all models in your application.
+In the ReactMVC framework, you can use the MysqlBaseModel class (Medoo) to communicate with a MySQL database using PHP. This class creates a common base for all models in your application.
 
 ## Creating a Model
 
@@ -274,10 +274,11 @@ After creating the model, the `.env` file is used to connect to the database. In
 
 ```
 DB_HOST=127.0.0.1
+DB_TYPE=mysql
 DB_PORT=3306
-DB_DATABASE=mydatabase
-DB_USERNAME=myusername
-DB_PASSWORD=mypassword
+DB_NAME=ReactMVC
+DB_USER=root
+DB_PASS=
 ```
 
 ## Creating a New Record
