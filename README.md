@@ -74,6 +74,9 @@ In the MVC architecture in PHP, the Controller is one of the three main componen
 The main task of the Controller is to receive user requests from the browser and extract the required information from the Model based on the received data. Then, the information is transferred to the View and sent to the user for display.
 
 In general, the Controller is responsible for controlling the program flow and is qualified to manage data and calculations through the Model, as well as displaying information to the user through the View.
+
+To define a new Controller, you need to create a new file in the App/Controllers directory and name it, for example, HomeController.php.
+See an example below:
 ```php
 <?php
 
