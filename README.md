@@ -162,6 +162,8 @@ Here, `token` is your bot's token obtained from BotFather, and `name` is the nam
 
 Now, after this step, set up and connect your bot to the webhooks.
 
+For a complete Nano tutorial, be sure to join the Nano Telegram channel at: [Join Now](https://t.me/PHPNano)
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
