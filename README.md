@@ -174,7 +174,7 @@ In the ReactMVC framework, there is a section called "Utilities" that contains s
 
 This section can retrieve useful information such as the user's IP address, host, browser information, and more. For example:
 
-```javascript
+```php
 Client::ip();
 ```
 
