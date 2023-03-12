@@ -125,6 +125,12 @@ The data is displayed in the template as follows:
 </body>
 </html>
 ```
+Now it's time to introduce the Controller to the Route. Navigate to the web.php file in the routes directory and define the Controller in the route.
+```php
+<?php
+
+Route::get('/', "HomeController@index");
+```
 
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
