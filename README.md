@@ -246,6 +246,79 @@ Middleware in ReactMVC allows users to modify requests and monitor corresponding
 
 <hr>
 
+# MysqlBaseModel in ReactMVC
+
+In the ReactMVC framework, you can use the MysqlBaseModel class to communicate with a MySQL database using PHP. This class creates a common base for all models in your application.
+
+## Creating a Model
+
+To create a new model in the App/Models directory, create a class with the desired name. For example, the Users model is created as follows:
+
+```php
+<?php 
+namespace ReactMVC\App\Models;
+
+use ReactMVC\App\Models\Contracts\MysqlBaseModel; 
+
+class User extends MysqlBaseModel
+{
+    protected $table = 'users'; 
+}
+```
+
+In this code, the `User` class inherits from the `MysqlBaseModel` class, and the `$table` value is set for it. This variable is the name of the table for which your model has been created.
+
+## Connecting to the Database
+
+After creating the model, the `.env` file is used to connect to the database. In this file, your database information is placed as follows:
+
+```
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mydatabase
+DB_USERNAME=myusername
+DB_PASSWORD=mypassword
+```
+
+## Creating a New Record
+
+To create a new record in the users table, you can consider the following code as an example:
+
+```php
+<?php
+use ReactMVC\App\Models\User;
+
+$data = [
+    'name' => 'Hossein',
+    'email' => 'test@gmail.com',
+];
+
+$user = new User();
+
+$user->create($data);
+```
+
+By running this code, a new record with the values specified in `$data` will be created in the `users` table.
+
+## Retrieving a Full List of Records
+
+To retrieve a full list of records in the users table, you can use the following code:
+
+```php
+<?php
+use ReactMVC\App\Models\User;
+
+$user = new User();
+
+$user->getAll();
+```
+
+## More DB Library Documentation
+
+To use the features of the Medoo library, which are also usable in the `MysqlBaseModel` class, you can refer to the documentation of this library.
+
+<hr>
+
 ## Social Media Links (dev):
 - [Telegram](https://t.me/h3dev)
 - [Website](https://dark-dev.eu)
