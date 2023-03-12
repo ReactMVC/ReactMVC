@@ -336,3 +336,6 @@ composer require reactmvc/reactmvc
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
 
+
+# License
+The ReactMVC framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
