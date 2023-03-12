@@ -145,6 +145,23 @@ Additionally, you can edit the 403 error path by modifying the .htaccess file.
 
 In the Router.php file located in the App/Core/Routing directory, you can also customize the 404 error page path.
 
+## Nano
+Nano is an advanced library for building Telegram bots with the easiest methods, specifically designed for ReactMVC. This library has exceptional speed and security, and supports 98% of Telegram's methods.
+
+To get started, add a Route and place the following code inside it:
+```php 
+<?php
+use ReactMVC\App\Utilities\Bot;
+Bot::telegram();
+
+$bot = new Nano('token', 'name'); 
+$bot->chat('/start', 'Hello Nano');
+$bot->run();
+```
+Here, `token` is your bot's token obtained from BotFather, and `name` is the name of your bot.
+
+Now, after this step, set up and connect your bot to the webhooks.
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
