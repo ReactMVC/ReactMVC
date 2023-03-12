@@ -36,6 +36,12 @@ composer install
 ```
 Be sure to run it on the domain or subdomain or localhost + port.
 
+Edit .env File :
+```
+APP_NAME= Your App Name
+APP_URL= Your App URL
+```
+
 Run on localhost:
 ```
 php -S localhost:8000
