@@ -244,6 +244,18 @@ In the above example, the Test class contains a handle() function that sends a d
 
 Middleware in ReactMVC allows users to modify requests and monitor corresponding responses as they pass through the server. This provides users with the ability to design and implement more expandable code for their systems.
 
+<hr>
+
+# Social Media Links (dev):
+- [Telegram](https://t.me/h3dev)
+- [Website](https://dark-dev.eu)
+- [Twitter](https://twitter.com/)
+
+To develop using a framework beyond just the basic one, you can install and use the ReactMVC package:
+```
+composer require reactmvc/reactmvc
+```
+
 # Libraries
 - [PHPDotEnv](https://github.com/vlucas/phpdotenv)
 - [Medoo](https://medoo.in)
