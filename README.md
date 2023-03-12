@@ -91,6 +91,10 @@ class HomeController{
 ```
 Above, the HomeController class is actually your controller class to be used in the framework with the same name as your file.
 The index public function performs an operation for you. For example, it is defined here to display index.php in the views folder, which is a template.
+
+<br>
+
+You can send data to a specific page by sending it as an array. At the bottom, there is a sample variable named $data, which is an array that has two parts: appName, which reads the application name from the .env file, and welcome, which is a simple message.
 ```php
 <?php
 
