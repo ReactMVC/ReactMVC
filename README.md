@@ -246,10 +246,10 @@ Middleware in ReactMVC allows users to modify requests and monitor corresponding
 
 <hr>
 
-# Social Media Links (dev):
+## Social Media Links (dev):
 - [Telegram](https://t.me/h3dev)
 - [Website](https://dark-dev.eu)
-- [Twitter](https://twitter.com/)
+- [G-mail](mailto:h3dev.pira@gmail.com)
 
 To develop using a framework beyond just the basic one, you can install and use the ReactMVC package:
 ```
