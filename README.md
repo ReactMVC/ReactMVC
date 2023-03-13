@@ -153,7 +153,7 @@ Additionally, for the PHP framework named ReactMVC, you can create a series of R
 ```php
 <?php
 
-Route::get('/post{id}', "PostController@index");
+Route::get('/post/{id}', "PostController@index");
 ```
 
 In the above code, the {id} parameter has been added. This parameter is passed to the Controller so that you can use it in other parts of the code.
